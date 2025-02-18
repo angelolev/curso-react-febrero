@@ -8,7 +8,7 @@ function App() {
     data: products,
     error,
     loading,
-  } = useFetch<ProductProps[]>("https://fakestoreapi.com/products");
+  } = useFetch<ProductProps[]>(`${import.meta.env.VITE_PRODUCTS_API}`);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Ocurrio un error</p>;
