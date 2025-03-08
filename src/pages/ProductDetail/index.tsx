@@ -12,7 +12,7 @@ export default function ProductDetail() {
     data: product,
     loading,
     error,
-  } = useFetch<ProductProps>(`${import.meta.env.VITE_PRODUCTS_API}/${id}`);
+  } = useFetch<ProductProps>(`https://fakestoreapi.com/products/${id}`);
 
   const addToCart = () => {
     context.setCount(context.count + 1);
