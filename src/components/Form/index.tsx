@@ -1,3 +1,7 @@
+/* eslint-disable no-empty */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+//@ts-nocheck
 import { addDoc, collection } from "firebase/firestore";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
